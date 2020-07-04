@@ -333,12 +333,12 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    display: none;
+    opacity: 0;
     z-index: 999;
     transition: .3s ease-in;
   }
   .fade{
-   display: block;
+   opacity: 1;
   }
 /* sign-in */
 .login_form .form{
@@ -895,3 +895,82 @@ input::placeholder{
     } */
   }
   
+
+
+
+  /* responsive */
+  @media only screen and (max-width:600px){
+    .bg_hero svg{
+      display: none;
+    }
+    .name{
+      left: 48%;
+    }
+    .hero .hero_content #join{
+      margin: 60px 20%;
+    }
+    .menu .images{
+      display: none;
+    }
+    .menu{
+      width: 213px;
+      height: 300px;
+    }
+    .change{
+      transform: translateX(33px);
+      border-radius: 3px;
+    }
+    .login_form{
+      width: 96%;
+      top:22%;
+      height: auto;
+    }
+    .social_media_link{
+      left:58%;
+      width:143%
+    }
+    .fab{
+      margin-left: 25px;
+    }
+    input{
+      width: 146%;
+      height: 34px;
+      margin-right: -18px;
+    }
+    .button_sign_in button{
+      padding: 6px 28px 6px 28px;
+      font-size: .6rem;
+    }
+    .outer_wraper div p{
+      font-size: 2rem;
+    }
+    .yoga{
+      height: auto;
+      width: auto;
+    }
+    .yoga svg{
+      height: 84%;
+      width: 100%;
+      transform: translateY(-80px);
+    }
+    .another_yoga p{
+      letter-spacing: 2px;
+      font-size: 1.5rem;
+      margin-left: auto;
+      transform: translateX(-162px);
+    }
+    .program{
+      height: 115.6vh;
+    }
+    .another_yoga a button{
+      margin-left: auto;
+      transform: translate(0px,-64px);
+      padding: 6px 43px 6px 43px;
+    }
+    .footer-content-column{
+      display: flex;
+    }
+    .footer-content{
+      padding: 30px 15px 660px;
+    }
+  }
