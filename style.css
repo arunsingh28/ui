@@ -38,6 +38,7 @@ body{
     transition: .3s ease-in-out;
 }
 .change{
+  z-index: 1;
   transform-origin: left;
   transform: translateX(70px);
   transition:all .4s ease-in-out;
@@ -211,7 +212,6 @@ body{
 
   /* hero image */
   .hero{
-    z-index: -1;
     position: relative;
     height: 80vh;
   }
